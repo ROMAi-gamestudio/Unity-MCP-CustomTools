@@ -1,6 +1,6 @@
 {
   "name": "com.romai.mcp.tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "displayName": "ROMAi MCP Custom Tools",
   "description": "Custom Editor MCP tools for IvanMurzak Unity-MCP. Adds 16 tools across three domains: UI Toolkit (link stylesheet, attach UIDocument, create PanelSettings), Build (platform get/set, scenes list/set, settings get/set, execute), Profiler (start/stop/status, frame timing, counters). Designed to fill the gaps left by the upstream MCP server.",
   "unity": "2022.3",
