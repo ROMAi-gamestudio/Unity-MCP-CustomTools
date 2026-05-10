@@ -173,7 +173,9 @@ namespace ROMAi.MCPTools.Editor
                 return new DocumentAttachResponse
                 {
                     gameObject = go.name,
+#pragma warning disable CS0618 // GetInstanceID is obsolete since Unity 6.5; keep for back-compat with 2022.3+ until package drops support.
                     instanceId = go.GetInstanceID(),
+#pragma warning restore CS0618
                     componentAdded = added,
                     visualTreeAssetPath = uxmlPath,
                     panelSettingsPath = panel != null ? panelSettingsPath : null
@@ -233,7 +235,9 @@ namespace ROMAi.MCPTools.Editor
                 return new PanelSettingsCreateResponse
                 {
                     path = outputPath,
+#pragma warning disable CS0618
                     instanceId = panel.GetInstanceID(),
+#pragma warning restore CS0618
                     referenceWidth = panel.referenceResolution.x,
                     referenceHeight = panel.referenceResolution.y,
                     scaleMode = panel.scaleMode.ToString()
@@ -249,7 +253,7 @@ namespace ROMAi.MCPTools.Editor
         {
             if (string.IsNullOrEmpty(path))
                 return string.Empty;
-            var parts = path.Replace('\\', '/').Split('/');
+            var parts = path!.Replace('\\', '/').Split('/');
             var collapsed = new List<string>(parts.Length);
             foreach (var p in parts)
             {
