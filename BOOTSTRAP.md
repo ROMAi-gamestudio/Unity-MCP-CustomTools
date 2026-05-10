@@ -42,6 +42,12 @@ The base `com.ivanmurzak.unity.mcp` package is now installed and the MCP bridge 
 
 ## 2. Automated phase — paste this prompt into Claude Code
 
+The prompt below is also available as a standalone file: **[`prompts/new-project-bootstrap.md`](prompts/new-project-bootstrap.md)**.
+
+Two ways to grab it:
+- **GitHub web:** open <https://github.com/ROMAi-gamestudio/Unity-MCP-CustomTools/blob/main/prompts/new-project-bootstrap.md> → click **Raw** → `Ctrl+A`, `Ctrl+C`.
+- **Terminal:** `curl -sL https://raw.githubusercontent.com/ROMAi-gamestudio/Unity-MCP-CustomTools/main/prompts/new-project-bootstrap.md | clip` (then `Ctrl+V` into Claude Code).
+
 Open a new Claude Code session in the Unity project directory and paste this **whole block** as the first message:
 
 ````text
