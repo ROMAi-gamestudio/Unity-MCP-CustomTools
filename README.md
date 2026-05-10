@@ -25,6 +25,8 @@ Custom Editor tools for the [IvanMurzak Unity-MCP](https://github.com/IvanMurzak
 
 ## Installation
 
+> **Setting up a new Unity project from scratch?** Follow [BOOTSTRAP.md](BOOTSTRAP.md) — it includes a copy-paste prompt for Claude Code that automates the whole installation.
+
 Add to `Packages/manifest.json`:
 
 ```json
